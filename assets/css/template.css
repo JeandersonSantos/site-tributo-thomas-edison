@@ -1,20 +1,40 @@
 *{
     font-family: Arial;
-    background-color: #acacac;
+    background-color: #e8f1f2;
     margin: 0;
 }
 body{
     padding-top: 80px; /* Altura do menu */
 }
-#images{
-    margin-left: 200px;
-    margin-right: 200px;
+p, h4, h1{
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#images, #sobre,.title-page,#obras {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .bg-black{
     background-color: #000;
 }
 .bg-white{
     background-color: #FFF;
+}
+.bg-sapphire-blue{
+    background-color: #006494;
+    color: #FFF;
+}
+.bg-calandon-blue{
+    background-color: #247BA0;
+    color: #FFF;
+}
+.bg-carolina-blue{
+    background-color: #1b98e0;
+    color: #FFF;
+}
+.mg-t-100{
+    margin-top: 100px;
 }
 .mg-t-50{
     margin-top: 50px;
@@ -24,7 +44,7 @@ header{
     display: flex;
     justify-content: center;
     height: 80px;
-    background-color: #000;
+    background-color: #13293d;
     width: 100%;
     position: fixed;/*importante para deixar o menu fixo*/
     top: 0;/*importante para deixar o menu fixo*/
@@ -32,18 +52,26 @@ header{
 .container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 990px;
+    background-color: #13293d;
+}
+.logo, .logo b{
+    background-color: #13293d;
+    font-size: 20px;
+    text-align: center;
+    color: #e8f1f2;
 }
 .menu{
     display: flex;
     align-items:center;
-    background-color: #000;
+    background-color: #13293d;
 }
 nav ul, nav li {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: #13293d;
 }
 nav ul{ 
     display: flex;
@@ -53,21 +81,27 @@ nav a{
     padding: 15px;
     text-decoration:none;
     color:#FFF;
-    background-color: #000;
+    background-color: #13293d;
     border-radius: 24px;
     transition: 0.5s;
     margin: 2px;
-}
+}   
 nav a:hover{
     background-color: #FFF;
-    color:#000;
+    color:#13293d;
+}
+/*TITLE*/
+.title-page{
+text-align: center;
 }
 /*SECTION images*/
+#images img{
+    border-radius: 20px;
+}
 #images{
     display: flex;
     justify-content: center;
     height: 670px;
-    padding-top: 20px;
 }
 .i_left, .i_rigth{
 flex: 1;    
@@ -97,4 +131,68 @@ text-align: center;
 }
 .img-thomas{
 border-radius: 20px;
+}
+.sobre-text{
+    text-align: justify;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+/*tesla*/
+.container-tesla{
+    display: flex;
+    align-items: center;
+}
+.n-tesla{
+    margin-top: 15px;
+    margin-left: 20px;
+    text-align: center;
+    padding: 5px;
+}
+.text-tesla{
+    padding-left: 20px;
+    padding-right: 40px;
+}
+.img-n-tesla{
+    width: 150px;
+}
+.sobre-text h1,h4, p, div,b,.container-tesla {
+    background-color: #247BA0;
+}
+.sobre-text p{
+    background-color: #247BA0;
+ 
+}
+.n-tesla figcaption{
+    color: #000;
+}
+
+/*Obras*/
+.container-obras{
+    padding-bottom: 20px;
+}
+.container-obras h2{
+    padding-top: 15px;
+    margin-left: 20px;
+}
+.c-i-1{
+    margin-top: 15px;
+    margin-left: 20px;
+    text-align: center;
+    padding: 5px;  
+}
+.img-c-i{
+    width: 200px;
+    border-radius: 20px;
+}   
+.container-ivencao{
+    display: flex;
+    align-items: center;  
+}
+#obras h2,div,p{
+    background-color: #1b98e0; 
+}
+.text-i{
+    text-align: justify;
+    color: #FFF;
+    font-size: 18px;
 }
