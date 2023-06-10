@@ -222,7 +222,7 @@ border-radius: 20px;
     background-color: inherit;
 
 }
-.redes img, .redes {
+.redes img, .redes a, .redes {
     background-color: inherit;
     padding: 5px;
     color: #FFF;
