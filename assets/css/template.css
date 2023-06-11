@@ -90,6 +90,22 @@ nav a:hover{
     background-color: #FFF;
     color:#13293d;
 }
+nav{
+    background-color: #13293d;
+}
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    background-color: #13293d;
+}
+.mm_line { 
+    height: 3px;
+    background-color: #ffffff;
+}
 /*TITLE*/
 .title-page{
 text-align: center;
@@ -213,7 +229,7 @@ border-radius: 20px;
     text-decoration: none;
     background-color: #13293d !important;
     color: #FFF;
-    font-size: 18px;
+    font-size: 15px;
 
 }
 .redes, .redes div{
@@ -226,10 +242,41 @@ border-radius: 20px;
     background-color: inherit;
     padding: 5px;
     color: #FFF;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
 }
 .autoria{
     color: #FFF;
-    font-size: 18px;
+    font-size: 15px;
+}
+@media (max-width:600px){
+    /*marges*/
+    .title-page , .container{
+        margin-left: 20px;
+        margin-right: 20px
+    }
+    /*menu*/
+    header{
+        height: auto;
+    }
+    .logo b{
+        font-size: 15px;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;/*pega todo o espaço que sobrar na linha e distribui igualmente entre os elementos, deixando o spaço igual em toda a linha*/
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    /*title*/
+    .title-page h1{
+        font-size: 20px;
+    }
 }
