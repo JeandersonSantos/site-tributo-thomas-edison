@@ -222,11 +222,15 @@ div,
 p {
   background-color: #1b98e0;
 }
+#obras h2{
+    color: #fff;
+}
 .text-i {
   text-align: justify;
   color: #fff;
   font-size: 18px;
 }
+/*Footer*/
 #footerId .container-footer,
 .autoria,
 .font,
@@ -240,7 +244,7 @@ p {
 .container-footer {
   height: inherit;
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-between;
   align-items: center;
 }
 .font,
@@ -269,12 +273,15 @@ p {
   color: #fff;
   font-size: 15px;
 }
-@media (max-width: 600px) {
+@media (max-width: 904px) {
   /*marges*/
   .title-page,
   .container,
   #images,
-  #sobre {
+  #sobre, 
+  #obras,
+  .container-footer,
+  .text-tesla {
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -283,7 +290,7 @@ p {
     height: auto;
   }
   .logo b {
-    font-size: 15px;
+    font-size: 14px;
   }
   .menuMobile {
     display: flex;
@@ -302,10 +309,6 @@ p {
   .title-page h1 {
     font-size: 20px;
   }
-  /*SECTION images*/
-  /*#images img{
-    border-radius: 20px;
-}*/
   #images {
     display: flex;
     justify-content: center;
@@ -327,11 +330,75 @@ p {
   }
   .img-thomas {
     border-radius: 20px;
-    width: 400px;
+    width: 250px;
   }
   .sobre-text {
     text-align: justify;
-    font-size: 15px;
+    font-size: 14px;
     padding-bottom: 20px;
+  }
+  .c-i-1 {
+    margin-top: 20px;
+    margin-left: 0px;
+    text-align: center;
+    padding: 5px;
+  }
+  .img-c-i {
+    width: 200px;
+    border-radius: 20px;
+  }
+  .container-ivencao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .c-i-1 figcaption{
+    font-size: 14px;
+  }
+  #obras h2{
+    font-size: 20px;
+    text-align: center;
+  }
+  .text-i {
+    text-align: justify;
+    color: #fff;
+    font-size: 14px;
+  }
+  /*tesla*/
+.container-tesla {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .n-tesla {
+    margin-left: 0px;
+  }
+  .text-tesla {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .img-n-tesla {
+    width: 100px;
+  }
+  /*Footer*/
+  .container-footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+  }
+  .font a, .font, .redes, .autoria {
+    font-size: 14px;
+  }
+  #footerId{
+    height: auto;
+  }
+  .redes img{
+    width: 20px;
+  }
+  .redes, .autoria,.font{
+    text-align: center;
   }
 }
